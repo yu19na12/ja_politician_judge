@@ -17,9 +17,14 @@ pip freeze > requirements.txt
 ```
 
 ## 実行
-モデルのトレーニング
+### モデルのトレーニング
 ```
 python main/train_model.py
+```
+
+### 実行
+```
+python main/main.py
 ```
 
 ## 顔検出
