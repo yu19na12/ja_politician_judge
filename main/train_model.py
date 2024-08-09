@@ -3,6 +3,7 @@ import pickle
 import os
 
 def train_model_from_folder(folder_path, model_file):
+    """ フォルダ内の画像でモデルをトレーニングし、保存する """
     known_face_encodings = []
     known_face_names = []
 
