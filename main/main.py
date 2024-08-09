@@ -1,13 +1,15 @@
 import cv2
 import face_recognition
 
-# 画像の読み込み
-img = cv2.imread('./main/images/sample.jpg')
+def main():
+    # 画像の読み込み
+    img = cv2.imread('./main/images/sample.jpg')
 
-# 画像が読み込めているか確認
-if img is None:
-    print("Error: 'sample.jpg' not found.")
-else:
+    # 画像が読み込めているか確認
+    if img is None:
+        print("Error: 'sample.jpg' not found.")
+        return
+
     # 色空間をRGBに変換（OpenCVはBGR形式で画像を読み込むため）
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
@@ -31,3 +33,6 @@ else:
     # ウィンドウを閉じるための処理
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    main()
