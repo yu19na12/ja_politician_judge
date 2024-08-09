@@ -24,8 +24,10 @@ else:
     # 画像を表示
     cv2.imshow('Detected Faces', img)
 
-    # 画像を表示するための待機時間を設定（適切な値に調整）
+    # face_locations と face_encodings をターミナルに出力
+    print("Face Locations:", face_locations)
+    print("Face Encodings:", face_encodings)
+
+    # ウィンドウを閉じるための処理
     cv2.waitKey(0)
-    
-    # すべてのOpenCVウィンドウを閉じる
     cv2.destroyAllWindows()
