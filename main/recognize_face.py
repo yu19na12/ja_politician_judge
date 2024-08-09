@@ -51,14 +51,14 @@ def recognize_face(image_path, model_file):
         
         # 類似度を画像の下に表示
         similarity_label = f"Similarity: {highest_similarity:.2f}%"
-        text_size, _ = cv2.getTextSize(similarity_label, cv2.FONT_HERSHEY_SIMPLEX, 0.8, 2)
+        text_size, _ = cv2.getTextSize(similarity_label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)
         text_width, text_height = text_size
         
         # テキストが画像の下に収まるように位置を調整
         text_x = max(left, 0)
         text_y = min(img_height - 10, bottom + text_height + 10)  # 画像の下部に収める
         
-        cv2.putText(img, similarity_label, (text_x, text_y), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 0, 0), 2)
+        cv2.putText(img, similarity_label, (text_x, text_y), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 0, 0), 2)
     
     # 画像を表示
     cv2.imshow('Image with Face Recognition', img)
