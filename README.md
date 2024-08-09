@@ -16,6 +16,12 @@ deactivate
 pip freeze > requirements.txt
 ```
 
+## 実行
+モデルのトレーニング
+```
+python main/train_model.py
+```
+
 ## 顔検出
 ### 顔検出(Face Detection)
 顔検出とは、入力された画像または動画から人間の顔の有無や位置を検出する処理のことです。つまり、画像内に顔があるかどうか、そしてあった場合はその位置(座標)を特定することが目的です。
