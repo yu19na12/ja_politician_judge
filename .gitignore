@@ -3,3 +3,8 @@ ENV/
 
 ## .DS_Store はいらない
 main/.DS_Store
+
+## 画像は量が多いので
+collection/images/
+train/model/
+train/train_images/
