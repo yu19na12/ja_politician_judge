@@ -1,6 +1,10 @@
+.PHONY: collect
+collect:
+	python collection/collect_image.py
+
 .PHONY: train
 train:
-	python train/train_model.py
+	python train/main.py
 
 .PHONY: run
 run:
