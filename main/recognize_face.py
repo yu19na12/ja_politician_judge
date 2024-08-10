@@ -39,7 +39,7 @@ def recognize_face(image_path, model_file):
                 highest_similarity = similarity
                 best_match_name = name
 
-        if highest_similarity >= 50:
+        if highest_similarity >= 60:
             label = f"{best_match_name} ({highest_similarity:.2f}%)"
         else:
             label = "No match found"
@@ -56,4 +56,4 @@ def recognize_face(image_path, model_file):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    recognize_face('./main/test_images/sample.jpeg', './main/model/politician_model.pkl')
+    recognize_face('./main/test_images/sample4.jpg', './main/model/politician_model.pkl')
