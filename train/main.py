@@ -1,6 +1,5 @@
 import os
 import shutil
-import subprocess
 import collect_images
 import train_model
 

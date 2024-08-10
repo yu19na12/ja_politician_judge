@@ -1,6 +1,6 @@
 .PHONY: collect
 collect:
-	python collection/collect_image.py
+	python collection/main.py
 
 .PHONY: train
 train:

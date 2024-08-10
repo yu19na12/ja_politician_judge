@@ -6,6 +6,7 @@ main/.DS_Store
 
 ## 画像は量が多いので
 collection/images/
+collection/__pycache__/
 train/model/
 train/train_images/
 train/__pycache__/

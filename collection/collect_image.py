@@ -53,13 +53,3 @@ def download_images(keyword, num_images, save_dir, save_name):
     rename_images(save_dir, prefix=f"{save_name}")
     print(f"Successfully renamed images for keyword: {keyword}")
 
-if __name__ == "__main__":
-    # キーワードと保存先のディレクトリを指定
-    keywords = ['TakaichiSanae']  # 収集する画像のキーワード
-    num_images = 100  # 収集する画像の枚数
-
-    for keyword in keywords:
-        save_dir = f'./collection/images/{keyword}'
-        save_name = keyword  # 保存名をキーワードに設定
-        # 画像のダウンロードと処理を実行
-        download_images(keyword, num_images, save_dir, save_name)
