@@ -8,3 +8,4 @@ main/.DS_Store
 collection/images/
 train/model/
 train/train_images/
+train/__pycache__/

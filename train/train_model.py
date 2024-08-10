@@ -28,6 +28,3 @@ def train_model_from_folder(folder_path, model_file):
         pickle.dump((known_face_encodings, known_face_names), f)
     
     print("Model trained and saved to", model_file)
-
-# 使用例
-train_model_from_folder('./train/train_images', './train/model/politician_model.pkl')
