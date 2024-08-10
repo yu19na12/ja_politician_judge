@@ -1,4 +1,5 @@
 ## 環境に関するので書かない
 ENV/
 
+## .DS_Store はいらない
 main/.DS_Store
