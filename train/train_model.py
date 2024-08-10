@@ -30,4 +30,4 @@ def train_model_from_folder(folder_path, model_file):
     print("Model trained and saved to", model_file)
 
 # 使用例
-train_model_from_folder('./main/train_images', './main/model/politician_model.pkl')
+train_model_from_folder('./train/train_images', './train/model/politician_model.pkl')

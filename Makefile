@@ -1,4 +1,7 @@
-.PHONY: env_start
+.PHONY: train
+train:
+	python train/train_model.py
 
-env_start:
-	source ENV/bin/activate && echo "Virtual environment activated"
+.PHONY: run
+run:
+	python main/main.py

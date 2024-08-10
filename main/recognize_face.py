@@ -56,4 +56,4 @@ def recognize_face(image_path, model_file):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    recognize_face('./main/test_images/sample4.jpg', './main/model/politician_model.pkl')
+    recognize_face('./main/test_images/sample4.jpg', './train/model/politician_model.pkl')
