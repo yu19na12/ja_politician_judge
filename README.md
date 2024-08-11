@@ -17,9 +17,14 @@ pip freeze > requirements.txt
 ```
 
 ## 実行
+### モデル用の画像を収集
+```
+python main/main.py
+```
+
 ### モデルのトレーニング
 ```
-python main/train_model.py
+python main/main.py
 ```
 
 ### 実行
